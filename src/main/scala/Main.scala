@@ -4,13 +4,10 @@
 import LinearAlgebra.{MyVector}
 
 object Main extends App {
-  val v1 = new MyVector(5, 3)
-  val v2 = new MyVector(1, 4)
-  println(v1.add(v2))
 
-  println(MyVector.add(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
-  println(MyVector.subtract(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
-  println(MyVector.multiply(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
-
+  println("Lesson 2 -> Quiz: Plus, Minus, Scalar Multiply")
+  println(MyVector.add(new MyVector(8.218, -9.341), new MyVector(-1.129, 2.111)))
+  println(MyVector.subtract(new MyVector(7.119, 8.215), new MyVector(-8.223, 0.878)))
+  println(MyVector.scalarMultiply(7.41, new MyVector(1.671, -1.012, -0.318)))
 
 }
