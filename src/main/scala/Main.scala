@@ -8,5 +8,9 @@ object Main extends App {
   val v2 = new MyVector(1, 4)
   println(v1.add(v2))
 
-  println(MyVector.add(new MyVector(3.0, 6.7, 12), new MyVector(9, 0.4)))
+  println(MyVector.add(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
+  println(MyVector.subtract(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
+  println(MyVector.multiply(new MyVector(3, 6.7, 12), new MyVector(9, 0.4)))
+
+
 }
