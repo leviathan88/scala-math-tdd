@@ -6,11 +6,13 @@ package LinearAlgebra
 class MyVector(val x: Double, val y: Double, val z: Double=0) {
 
   // Private methods
-  private def f(point: Double): Float = point.toFloat
+  private def format(point: Double): Double = (math.floor(point*1000))/1000
 
   // Overriden methods
-  override def toString =
-    if (this.z!=0) s"[X: ${f(this.x)}, Y: ${f(this.y)}, Z: ${f(this.z)}]" else s"[X: ${f(this.x)}, Y: ${f(this.y)}]"
+  override def toString = this.z match {
+    case 0 => s"[X: ${format(this.x)}, Y: ${format(this.y)}]"
+    case _ => s"[X: ${format(this.x)}, Y: ${format(this.y)}, Z: ${format(this.z)}]"
+  }
 
   override def hashCode = (x, y, z).##
 
