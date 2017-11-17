@@ -1,0 +1,1 @@
+val arr = Array.fill[Int](5)(1)
