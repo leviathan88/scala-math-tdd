@@ -43,6 +43,26 @@ object Sorting {
     this._mergesort(original.clone)
   }
 
+  def countSort(arr: Array[Int]) : Array[Int] = {
+    val counterArr = Array.fill[Int](1000002)(0)
+
+    arr.foreach(el=>{
+      counterArr(el)=counterArr(el)+1
+    })
+
+    var sol: Array[Int] = Array()
+    for (i <- 0 until counterArr.length) {
+      val temp = counterArr(i)
+
+      if(temp>0) {
+        for (_ <- Range(0,temp)) {
+          sol:+=i
+        }
+      }
+    }
+    sol
+  }
+
   private def _mergesort(arr: Array[Int]): Array[Int] = {
     if(arr.length<2) arr
     else {
