@@ -20,4 +20,8 @@ class SortingTest extends FunSuite {
     assert(Sorting.mergesort(unsorted).deep == sorted.deep)
   }
 
+  test("countsort should sort array correctly") {
+    assert(Sorting.countSort(unsorted).deep == sorted.deep)
+  }
+
 }
