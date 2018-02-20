@@ -1,3 +1,5 @@
+// Partially Applied Functions
+
 def plus(a: Int)(b: Int) = a + b
 val plus2: (Int => Int) = plus(2)(_)
 
