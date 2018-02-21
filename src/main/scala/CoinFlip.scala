@@ -19,7 +19,7 @@ object CoinFlip extends App {
         val newGameState = gameState.copy(newNumFlips, gameState.numCorrectGuesses + (if(isGuessCorrect) 1 else 0))
         printGameState(coinTossResult, newGameState)
         mainLoop(newGameState, random)
-        }
+      }
       case _ => {
         printGameOver
         printGameState(gameState)
