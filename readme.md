@@ -1,11 +1,10 @@
-# Scala TDD for Math
+# Scala Learning Repo
 
-Implementing math classes with Scala by TDD approach
-
-  - Scala
-  - TDD First
-  - Math (Linear Algebra, calculus...)
-  - Preparing for Machine learning, Deep learning and A.I.
+### Functional Programming Simplified (in Scala)
+### Programming in Scala
+### Some Algorithms
+### Linear Algebra
+### TDD
 
 ### Installation and Running the project
 Have SBT installed
